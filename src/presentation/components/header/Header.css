@@ -1,0 +1,37 @@
+.header {
+  background-color: black;
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 150px;
+  width: 100%;
+}
+
+.header-links-container {
+  align-items: center;
+  display: flex;
+  width: 445px;
+  justify-content: space-between;
+}
+
+.header-links-container > nav {
+  display: flex;
+  justify-content: space-between;
+  width: 337px;
+}
+
+.header-links-container > nav > a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 68px;
+}
