@@ -20,3 +20,12 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
+p {
+  margin: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}

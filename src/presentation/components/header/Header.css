@@ -12,7 +12,7 @@
 .header-links-container {
   align-items: center;
   display: flex;
-  width: 445px;
+  width: 480px;
   justify-content: space-between;
 }
 
@@ -34,5 +34,13 @@
 .social-links-container {
   display: flex;
   justify-content: space-between;
-  width: 68px;
+  width: 100px;
+}
+
+.opensea-btn {
+  width: 21px;
+}
+
+.opensea-btn > img {
+  width: 100%;
 }

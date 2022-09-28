@@ -1,5 +1,8 @@
+.landing-page {
+  padding: 0 24%;
+}
+
 .welcome-img {
-  max-width: 955px;
   width: 100%;
 }
 
@@ -42,6 +45,22 @@
 }
 
 .secondary-img {
+  display: flex;
   max-width: 600px;
+  justify-content: center;
+  position: relative;
   width: 100%;
+  margin: auto;
+  padding: 200px 0;
+}
+
+.info-text {
+  display: flex;
+  font-size: 20px;
+  text-align: left;
+  width: 500px;
+}
+
+.info-text > p {
+  justify-content: left;
 }

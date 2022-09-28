@@ -26,10 +26,11 @@ function LandingPage() {
           </button>
         </div>
       </div>
-      <p>{infoText}</p>
+      <div className="info-text">
+        <p>{infoText}</p>
+      </div>
       <img className="secondary-img" src={landingSecondaryImg} alt="" />
     </div>
   );
 }
-
 export default LandingPage;

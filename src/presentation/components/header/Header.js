@@ -14,6 +14,9 @@ function Header() {
   const onDiscordClick = () => {
     window.open("https://discord.com/invite/prJWEjUV", "_blank");
   };
+  const onOpenseaClick = () => {
+    window.open("https://opensea.io/collection/abstractherbs", "_blank");
+  };
 
   return (
     <div className="header">
@@ -38,6 +41,12 @@ function Header() {
           </button>
           <button onClick={onDiscordClick}>
             <img src={discordLogo} alt="Discord"></img>
+          </button>
+          <button className="opensea-btn" onClick={onOpenseaClick}>
+            <img
+              src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg"
+              alt="Opensea"
+            ></img>
           </button>
         </div>
       </div>
