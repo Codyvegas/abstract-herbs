@@ -6,6 +6,7 @@
   position: fixed;
   padding: 0 150px;
   width: 100%;
+  z-index: 999999;
 }
 
 .header-links-container {
