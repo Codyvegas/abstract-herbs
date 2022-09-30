@@ -13,7 +13,7 @@ function Footer() {
     if (validateCheck !== isEmailValid) {
       setIsEmailValid(validate(inputValue));
     }
-  }, [inputValue]);
+  }, [inputValue, isEmailValid]);
 
   const openTermsAndConditions = () => {
     console.log("opens terms and conditions");
