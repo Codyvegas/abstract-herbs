@@ -9,7 +9,7 @@ function Header() {
     console.log("logo was clicked");
   };
   const onTwitterClick = () => {
-    window.open("https://twitter.com/DrGrinspooon", "_blank");
+    window.open("https://twitter.com/TheHerb_s", "_blank");
   };
   const onDiscordClick = () => {
     window.open("https://discord.com/invite/prJWEjUV", "_blank");

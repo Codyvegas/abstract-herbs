@@ -65,12 +65,6 @@ function Footer() {
     );
   };
 
-  /*
-  -container for icons
-    -icons
-    -copyright + terms and conditions
-*/
-
   return (
     <div className="footer">
       <div className="footer-inner">

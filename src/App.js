@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./presentation/components/header/Header";
 import LandingPage from "./presentation/pages/landingPage/LandingPage";
+import ProjectPage from "./presentation/pages/projectPage/ProjectPage";
 import Footer from "./presentation/components/footer/Footer";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="app">
       <Header />
       <div className="pages-container">
-        <LandingPage />
+        {/* <LandingPage /> */}
+        <ProjectPage />
       </div>
       <Footer />
     </div>
