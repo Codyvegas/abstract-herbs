@@ -4,10 +4,12 @@ import ProjectPage from "../presentation/pages/projectPage/ProjectPage";
 
 function AppRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/project" element={<ProjectPage />} />
-    </Routes>
+    <div style={{ paddingTop: "130px" }}>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+      </Routes>
+    </div>
   );
 }
 
