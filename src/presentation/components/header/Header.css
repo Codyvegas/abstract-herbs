@@ -1,4 +1,5 @@
 .header {
+  align-items: center;
   background-color: black;
   display: flex;
   height: 130px;
@@ -22,7 +23,7 @@
   width: 337px;
 }
 
-.header-links-container > nav > a {
+.header-links-container > nav > * {
   color: white;
   font-size: 18px;
   font-weight: 700;

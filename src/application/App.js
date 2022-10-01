@@ -1,19 +1,20 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./Routes";
 import Header from "../presentation/components/header/Header";
-import LandingPage from "../presentation/pages/landingPage/LandingPage";
-import ProjectPage from "../presentation/pages/projectPage/ProjectPage";
 import Footer from "../presentation/components/footer/Footer";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <div className="pages-container">
-        {/* <LandingPage /> */}
-        <ProjectPage />
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <div className="pages-container">
+          <AppRoutes />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

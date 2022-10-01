@@ -1,55 +1,56 @@
 import "./Header.css";
+import { Link, Outlet } from "react-router-dom";
 import discordLogo from "../../../assets/icons/discord_logo.svg";
 import herbLogo from "../../../assets/icons/herb_logo.svg";
 import twitterLogo from "../../../assets/icons/twitter_logo.svg";
+import * as helpers from "./helpers.js";
 
-//This is a functional component
 function Header() {
-  const onLogoClick = () => {
-    console.log("logo was clicked");
+  const renderHerbLogo = () => {
+    return (
+      <Link to="/">
+        <img src={herbLogo} alt=""></img>
+      </Link>
+    );
   };
-  const onTwitterClick = () => {
-    window.open("https://twitter.com/TheHerb_s", "_blank");
+
+  const renderNavLinks = () => {
+    return (
+      <nav>
+        <Link to="/project">Project</Link>
+        <Link to="/">Artist</Link>
+        <Link to="/">The Herbs</Link>
+      </nav>
+    );
   };
-  const onDiscordClick = () => {
-    window.open("https://discord.com/invite/prJWEjUV", "_blank");
-  };
-  const onOpenseaClick = () => {
-    window.open("https://opensea.io/collection/abstractherbs", "_blank");
+
+  const renderSocialLinks = () => {
+    return (
+      <div className="social-links-container">
+        <button onClick={helpers.onTwitterClick}>
+          <img src={twitterLogo} alt="Twitter"></img>
+        </button>
+        <button onClick={helpers.onDiscordClick}>
+          <img src={discordLogo} alt="Discord"></img>
+        </button>
+        <button className="opensea-btn" onClick={helpers.onOpenseaClick}>
+          <img
+            src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg"
+            alt="Opensea"
+          ></img>
+        </button>
+      </div>
+    );
   };
 
   return (
     <div className="header">
-      <button onClick={onLogoClick}>
-        <img src={herbLogo} alt=""></img>
-      </button>
+      {renderHerbLogo()}
       <div className="header-links-container">
-        <nav>
-          <a href="https://www.google.com/" target="_blank">
-            Project
-          </a>
-          <a href="https://www.google.com/" target="_blank">
-            Artist
-          </a>
-          <a href="https://www.google.com/" target="_blank">
-            The Herbs
-          </a>
-        </nav>
-        <div className="social-links-container">
-          <button onClick={onTwitterClick}>
-            <img src={twitterLogo} alt="Twitter"></img>
-          </button>
-          <button onClick={onDiscordClick}>
-            <img src={discordLogo} alt="Discord"></img>
-          </button>
-          <button className="opensea-btn" onClick={onOpenseaClick}>
-            <img
-              src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg"
-              alt="Opensea"
-            ></img>
-          </button>
-        </div>
+        {renderNavLinks()}
+        {renderSocialLinks()}
       </div>
+      <Outlet />
     </div>
   );
 }
