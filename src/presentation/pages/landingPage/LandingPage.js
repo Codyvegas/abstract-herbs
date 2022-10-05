@@ -3,17 +3,6 @@ import { enterBtnText, infoText, welcomeMessage } from "./constants";
 import landingWelcomeImg from "../../../assets/images/landing_welcome.jpg";
 import landingSecondaryImg from "../../../assets/images/landing_secondary.jpg";
 
-/* 
--container
-    -large photo
-    -welcome to the herbs (absolute)
-        -enter button 
-
--paragraph container
--large photo container
-    -large photo
-*/
-
 function LandingPage() {
   return (
     <div className="landing-page">

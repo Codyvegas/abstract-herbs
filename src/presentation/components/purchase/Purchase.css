@@ -1,0 +1,38 @@
+.purchase-container {
+  align-items: center;
+  background-color: #55b578;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  min-height: 150px;
+  width: 100%;
+  padding: 50px;
+  margin: 100px 0;
+}
+
+.purchase-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.purchase-button-container > button {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+
+.purchase-container > h2 {
+  height: 34px;
+  font-size: 30px;
+}
+
+.purchase-container > p {
+  font-size: 18px;
+  text-align: left;
+  width: 300px;
+}

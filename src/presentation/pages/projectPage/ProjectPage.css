@@ -1,3 +1,37 @@
+.closing-img {
+  display: flex;
+  height: 1000px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  width: 1700px;
+  margin-right: 400px;
+}
+
+hr {
+  background-color: #55b578;
+  border-width: 0px;
+  height: 1px;
+  width: 130%;
+  margin-left: -160px;
+  z-index: 999;
+}
+
 .project-page {
   background-color: black;
+  padding: 0 20%;
+}
+
+.welcome-header {
+  display: flex;
+  font-size: 30px;
+  padding: 30px 0 130px;
+  text-align: left;
+  width: 700px;
+}
+
+.welcome-img {
+  display: flex;
+  height: 1000px;
+  margin-top: 50px;
+  width: 1700px;
 }

@@ -32,16 +32,16 @@
   text-transform: uppercase;
 }
 
-.social-links-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-}
-
 .opensea-btn {
   width: 21px;
 }
 
 .opensea-btn > img {
   width: 100%;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
 }

@@ -9,6 +9,7 @@ import {
   roadmap,
   roadmapP,
 } from "./constants";
+import Purchase from "../../components/purchase/Purchase";
 
 function ProjectPage() {
   return (
@@ -16,21 +17,19 @@ function ProjectPage() {
       <div className="welcome-container">
         <img className="welcome-img" src={projectWelcomeImg} alt="" />
       </div>
-      <div className="welcome-header">"WELCOME TO THE HERBS FAM"</div>
-      <br />
-
+      <div className="welcome-header">
+        <strong>WELCOME TO THE HERBS FAM</strong>
+      </div>
+      <hr />
       <h1>{headerMessage}</h1>
       <p>{herbCosmos}</p>
       <div className="img-container" />
-      <br />
-
-      <div className="purchase-container" />
-      <br />
-
+      <hr />
+      <Purchase />
+      <hr />
       <h1>{herbFam}</h1>
       <p>{herbFamP}</p>
-      <br />
-
+      <hr />
       <h1>{roadmap}</h1>
       <p>{roadmapP}</p>
       <img className="closing-img" src={projectClosingImg} alt="" />
