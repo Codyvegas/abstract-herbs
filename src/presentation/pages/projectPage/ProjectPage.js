@@ -10,8 +10,14 @@ import {
   roadmapP,
 } from "./constants";
 import Purchase from "../../components/purchase/Purchase";
+import ImageGrid from "../../components/imageGrid/ImageGrid";
+import { gatherImagesFromFolder } from "../../../utils/utils";
 
 function ProjectPage() {
+  const projectPageNfts = gatherImagesFromFolder(
+    require.context("../../../assets/images", false, /\.(png|jpe?g|svg)$/)
+  );
+
   return (
     <div className="project-page">
       <div className="welcome-container">
@@ -21,9 +27,16 @@ function ProjectPage() {
         <strong>WELCOME TO THE HERBS FAM</strong>
       </div>
       <hr />
-      <div className="herbcosmos">
-        <h1>{headerMessage}</h1>
-        <p>{herbCosmos}</p>
+      <div className="herbcosmos-container">
+        <div className="herbcosmos">
+          <h1>{headerMessage}</h1>
+          <p>{herbCosmos}</p>
+        </div>
+        <ImageGrid
+          images={projectPageNfts}
+          imageWidth={"80px"}
+          numColumns={2}
+        />
       </div>
       <hr />
       <Purchase />
