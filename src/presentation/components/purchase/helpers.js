@@ -7,4 +7,4 @@ export const onAbstractClick = () => {
 };
 
 export const buyHerbsText =
-  "There are two Herb Collections, like our Community likes to say: you are not finding the herb the herb finds you. To find your herb check out both collections on Opensea.";
+  "There are two Herb Collections. As the Community likes to say, you dont choose your herb, your herb chooses you. To find your herb, check out both collections on Opensea.";
