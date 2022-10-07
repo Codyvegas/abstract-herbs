@@ -1,8 +1,17 @@
 import "./ImageGrid.css";
 
-function ImageGrid({ images = [], numColumns = 1 }) {
+function ImageGrid({ images = [], numColumns = 1, gap = 20 }) {
+  const getContainerStyles = () => {
+    return {
+      gap: gap,
+      gridTemplateColumns: `repeat(${numColumns}, calc(${100 / numColumns} - ${
+        gap / numColumns
+      }))`,
+    };
+  };
+
   return (
-    <div className="image-grid-container">
+    <div className="image-grid-container" style={getContainerStyles()}>
       {images.map((imageSrc, index) => {
         return (
           <img

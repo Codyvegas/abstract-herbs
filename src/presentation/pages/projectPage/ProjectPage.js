@@ -38,7 +38,7 @@ function ProjectPage() {
           <h1>{headerMessage}</h1>
           <p>{herbCosmos}</p>
         </div>
-        <ImageGrid images={projectPageNfts} numColumns={2} />
+        <ImageGrid images={projectPageNfts} gap={20} numColumns={2} />
       </div>
       <hr />
       <Purchase />
