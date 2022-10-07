@@ -1,19 +1,47 @@
-.closing-img {
-  display: flex;
-  height: 1000px;
-  margin-top: 50px;
-  margin-bottom: 200px;
-  width: 1700px;
-  margin-right: 400px;
-}
-
 hr {
   background-color: #55b578;
   border-width: 0px;
   height: 1px;
-  width: 130%;
-  margin-left: -160px;
+  width: 125%;
+  margin-left: -130px;
   z-index: 999;
+}
+
+.closing-img {
+  display: flex;
+  height: 800px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 1200px;
+  margin-right: 400px;
+}
+
+.herbcosmos > h1 {
+  display: flex;
+  width: 400px;
+  margin-top: 400px;
+}
+
+.herbcosmos > p {
+  display: flex;
+  width: 450px;
+  height: 100px;
+  font-size: 18px;
+  margin-bottom: 150px;
+}
+
+.herbfam > h1 {
+  display: flex;
+  width: 100px;
+  margin-top: 200px;
+}
+
+.herbfam > p {
+  display: flex;
+  width: 450px;
+  height: 100px;
+  font-size: 18px;
+  margin-bottom: 150px;
 }
 
 .project-page {
@@ -21,17 +49,31 @@ hr {
   padding: 0 20%;
 }
 
+.roadmap > h1 {
+  margin-top: 100px;
+}
+
+.roadmap > p {
+  justify-content: center;
+  display: flex;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 120px;
+  font-size: 18px;
+}
+
 .welcome-header {
   display: flex;
-  font-size: 30px;
-  padding: 30px 0 130px;
+  font-size: 35px;
+  padding: 60px 0 130px;
   text-align: left;
   width: 700px;
 }
 
 .welcome-img {
   display: flex;
+  justify-content: center;
   height: 1000px;
-  margin-top: 50px;
-  width: 1700px;
+  margin-top: 60px;
+  width: 1200px;
 }

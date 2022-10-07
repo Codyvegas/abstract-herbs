@@ -21,17 +21,22 @@ function ProjectPage() {
         <strong>WELCOME TO THE HERBS FAM</strong>
       </div>
       <hr />
-      <h1>{headerMessage}</h1>
-      <p>{herbCosmos}</p>
-      <div className="img-container" />
+      <div className="herbcosmos">
+        <h1>{headerMessage}</h1>
+        <p>{herbCosmos}</p>
+      </div>
       <hr />
       <Purchase />
       <hr />
-      <h1>{herbFam}</h1>
-      <p>{herbFamP}</p>
+      <div className="herbfam">
+        <h1>{herbFam}</h1>
+        <p>{herbFamP}</p>
+      </div>
       <hr />
-      <h1>{roadmap}</h1>
-      <p>{roadmapP}</p>
+      <div className="roadmap">
+        <h1>{roadmap}</h1>
+        <p>{roadmapP}</p>
+      </div>
       <img className="closing-img" src={projectClosingImg} alt="" />
     </div>
   );
