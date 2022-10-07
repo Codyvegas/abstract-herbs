@@ -7,41 +7,31 @@ hr {
   z-index: 999;
 }
 
-.closing-img {
-  display: flex;
-  height: 800px;
-  margin-top: 50px;
-  margin-bottom: 150px;
-  width: 1200px;
-  margin-right: 400px;
+.project-herbcosmos {
+  padding-right: 50px;
 }
 
-.herbcosmos > h1 {
-  display: flex;
-  width: 400px;
-  margin-top: 400px;
-}
-
-.herbcosmos > p {
-  display: flex;
-  width: 450px;
-  height: 100px;
+.project-herbcosmos > p {
   font-size: 18px;
-  margin-bottom: 150px;
 }
 
-.herbfam > h1 {
+.project-herbcosmos-container {
+  align-items: end;
   display: flex;
-  width: 100px;
-  margin-top: 200px;
+  margin: 100px 0;
 }
 
-.herbfam > p {
-  display: flex;
-  width: 450px;
-  height: 100px;
+.project-herbcosmos-container > * {
+  flex: 1 0 50%;
+}
+
+.project-herbfam {
+  margin: 100px 0;
+  width: 50%;
+}
+
+.project-herbfam > p {
   font-size: 18px;
-  margin-bottom: 150px;
 }
 
 .project-page {
@@ -49,31 +39,36 @@ hr {
   padding: 0 20%;
 }
 
-.roadmap > h1 {
-  margin-top: 100px;
+.project-roadmap {
+  margin: 100px 0;
+  width: 100%;
 }
 
-.roadmap > p {
+.project-roadmap > p {
   justify-content: center;
-  display: flex;
-  width: 450px;
-  height: 100px;
-  margin-bottom: 120px;
+  width: 50%;
+  margin-bottom: 100px;
   font-size: 18px;
 }
 
-.welcome-header {
-  display: flex;
-  font-size: 35px;
-  padding: 60px 0 130px;
-  text-align: left;
-  width: 700px;
+.project-roadmap > img {
+  width: 100%;
 }
 
-.welcome-img {
-  display: flex;
-  justify-content: center;
-  height: 1000px;
+.project-welcome-header {
+  font-size: 35px;
   margin-top: 60px;
-  width: 1200px;
+}
+
+.project-welcome-container {
+  padding-bottom: 100px;
+}
+
+.project-welcome-img-container > img {
+  width: 100%;
+}
+
+.project-welcome-img-container {
+  max-height: 530px;
+  overflow: hidden;
 }

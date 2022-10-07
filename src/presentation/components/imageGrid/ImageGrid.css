@@ -1,0 +1,12 @@
+.image-grid-container {
+  column-gap: 20px;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  row-gap: 20px;
+  width: 50%;
+}
+
+.image-grid-container > img {
+  width: 100%;
+}
