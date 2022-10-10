@@ -1,3 +1,13 @@
+.purchase-btn:hover {
+  background-color: #fa000e;
+  color: white;
+}
+
+.purchase-btn {
+  transition: all 0.23s ease-in-out;
+  margin-top: 5px;
+}
+
 .purchase-container {
   align-items: center;
   background-color: #55b578;

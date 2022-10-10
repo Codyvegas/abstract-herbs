@@ -1,25 +1,38 @@
-import "./artistPage.css";
+import "./ArtistPage.css";
 import artistDavidImg from "../../../assets/images/artist_david.jpg";
-import artistHerbImg1 from "../../../assets/images/artist_herb1.jpg";
-import artistHerbImg2 from "../../../assets/images/artist_herb2.jpg";
-import {david, description, endingParagraph} from "./constants";
-
-// import Header from "./presentation/components/header/Header";
-// import Footer from "./presentation/components/footer/Footer";
+import { david, description, endingParagraph } from "./constants";
+import ImageGrid from "../../components/imageGrid/ImageGrid";
+import { gatherImagesFromFolder } from "../../../utils/utils";
+import HERB from "../../../assets/images/HERB.jpg";
 
 function ArtistPage() {
-  return (
-  <div className="artist-page">
-    <img className="welcome-img" src={artistDavidImg} alt="" />
-    <h1>{david}</h1>
-        <p>{description}</p> 
-    <br />
-    
-    <p>{endingParagraph}</p>
-    <img className="herb-img-1" src={artistHerbImg1} alt="" />
-    <img className="herb-img-2" src={artistHerbImg2} alt="" />    
-  </div>; 
+  const artistPageNfts = gatherImagesFromFolder(
+    require.context(
+      "../../../assets/images/artistPageImgs",
+      false,
+      /\.(png|jpe?g|svg)$/
+    )
+  );
 
-)}
+  return (
+    <div className="artist-page">
+      <div className="artist-img-container">
+        <h1>{david}</h1>
+        <p>{description}</p>
+      </div>
+      <div classname="david-info">
+        <img src={artistDavidImg} alt="" width="816" height="544" />
+      </div>
+      <hr />
+      <div className="btm-container">
+        <p>{endingParagraph}</p>
+        <ImageGrid images={artistPageNfts} gap={20} numColumns={1} />
+      </div>
+      <div className="btm-txt-logo">
+        <img src={HERB} alt="" />
+      </div>
+    </div>
+  );
+}
 
 export default ArtistPage;

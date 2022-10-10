@@ -18,8 +18,8 @@ function Header() {
     return (
       <nav>
         <Link to="/project">Project</Link>
-        <Link to="/">Artist</Link>
-        <Link to="/">The Herbs</Link>
+        <Link to="/artist">Artist</Link>
+        <Link to="/the-herbs">The Herbs</Link>
       </nav>
     );
   };

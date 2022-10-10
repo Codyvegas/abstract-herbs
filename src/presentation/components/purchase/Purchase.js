@@ -13,8 +13,12 @@ function Purchase() {
         <h2>BUY HERBS</h2>
         <p>{helpers.buyHerbsText}</p>
         <div className="purchase-button-container">
-          <button onClick={helpers.onOgClick}>OG HERBS</button>
-          <button onClick={helpers.onAbstractClick}>ABSTRACT HERBS</button>
+          <button className="purchase-btn" onClick={helpers.onOgClick}>
+            OG HERBS
+          </button>
+          <button className="purchase-btn" onClick={helpers.onAbstractClick}>
+            ABSTRACT HERBS
+          </button>
         </div>
       </div>
     );

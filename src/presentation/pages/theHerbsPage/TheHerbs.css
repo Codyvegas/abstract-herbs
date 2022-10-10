@@ -1,0 +1,7 @@
+.the-herb-page {
+  background-color: black;
+}
+
+.the-herb-page > img {
+  width: 30%;
+}
