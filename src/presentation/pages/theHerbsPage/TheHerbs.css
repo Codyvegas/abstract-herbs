@@ -1,7 +1,15 @@
-.the-herb-page {
+.herb-container {
   background-color: black;
+  padding: 0 20%;
+  display: flex;
+  justify-content: center;
 }
 
-.the-herb-page > img {
-  width: 30%;
+.og-king-btn {
+  margin-right: 2px;
+  max-height: 600px;
+}
+
+.devil-king-btn {
+  margin-bottom: 100px;
 }

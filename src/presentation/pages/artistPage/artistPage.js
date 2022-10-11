@@ -20,8 +20,8 @@ function ArtistPage() {
         <h1>{david}</h1>
         <p>{description}</p>
       </div>
-      <div classname="david-info">
-        <img src={artistDavidImg} alt="" width="816" height="544" />
+      <div classname="david-img">
+        <img src={artistDavidImg} alt="" />
       </div>
       <hr />
       <div className="btm-container">

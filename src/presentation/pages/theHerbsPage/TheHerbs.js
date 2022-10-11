@@ -1,12 +1,17 @@
 import "./TheHerbs.css";
-import TheHerb1 from "../../../assets/images/theHerb1.jpg";
-import TheHerb2 from "../../../assets/images/theHerb2.jpg";
+import OgKing from "../../../assets/images/og_king.jpg";
+import DevilKing from "../../../assets/images/devil_king.jpg";
+import * as helpers from "./HerbHelpers";
 
 function TheHerbPage() {
   return (
-    <div className="the-herb-page">
-      <img src={TheHerb1} alt="" />
-      <img src={TheHerb2} alt="" />
+    <div className="herb-container">
+      <button className="og-king-btn" onClick={helpers.onOgClick}>
+        <img src={OgKing} alt="" />
+      </button>
+      <button className="devil-king-btn" onClick={helpers.onAbstractClick}>
+        <img src={DevilKing} alt="" />
+      </button>
     </div>
   );
 }

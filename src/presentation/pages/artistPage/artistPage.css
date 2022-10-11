@@ -12,10 +12,6 @@ hr {
   padding: 0 20%;
 }
 
-.artist-img-container {
-  margin: 100px 0;
-}
-
 .btm-container {
   display: flex;
   gap: 30%;

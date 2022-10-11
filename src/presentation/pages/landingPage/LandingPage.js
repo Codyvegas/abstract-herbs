@@ -1,5 +1,11 @@
 import "./LandingPage.css";
-import { enterBtnText, infoText, welcomeMessage } from "./constants";
+// import { Link, Outlet } from "react-router-dom"; do i need this?
+import {
+  onEnterClick,
+  enterBtnText,
+  infoText,
+  welcomeMessage,
+} from "./constants";
 import landingWelcomeImg from "../../../assets/images/landing_welcome.jpg";
 import landingSecondaryImg from "../../../assets/images/landing_secondary.jpg";
 
@@ -10,7 +16,8 @@ function LandingPage() {
         <img className="welcome-img" src={landingWelcomeImg} alt="" />
         <div className="welcome-inner-container">
           <h1>{welcomeMessage}</h1>
-          <button className="welcome-btn" onClick={() => {}}>
+          <button className="welcome-btn" onClick={onEnterClick.onEnterClick}>
+            {/* I dont know how to link this to the project page (<Link to="/project">Project</Link>) */}
             {enterBtnText}
           </button>
         </div>
@@ -23,3 +30,5 @@ function LandingPage() {
   );
 }
 export default LandingPage;
+
+//enter button is not finished and needs routing help
