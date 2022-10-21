@@ -47,13 +47,13 @@ function AbstractHerbsPage() {
       <hr />
       <div className="above-500">
         <h1>ABOVE THE #500</h1>
-        <P>{above500}</P>
-        <P>{above500p2}</P>
+        <p>{above500}</p>
+        <p>{above500p2}</p>
       </div>
       <hr />
       <div className="abstract-sunday">
         <h1>ABSTRACT SUNDAY</h1>
-        <P>{abstractSunday}</P>
+        <p>{abstractSunday}</p>
         <img src={LizardPoster} alt="" />
       </div>
       <hr />

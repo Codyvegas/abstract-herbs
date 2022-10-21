@@ -1,4 +1,42 @@
+.buy-btn {
+  background-color: white;
+  border-radius: 4px;
+  font-size: 16;
+  width: 200px;
+  margin-top: 30px;
+  padding: 7px;
+  font-weight: bold;
+  transition: all 0.23s ease-in-out;
+}
+
+.buy-btn:hover {
+  background-color: #fa000e;
+  color: white;
+}
+
+.first-section {
+  display: flex;
+  justify-content: start;
+}
+
+.first-section > img {
+  width: 70%;
+  align-items: flex-start;
+  transform: scale(0.65);
+  margin-left: -150px;
+}
+
 .og-page {
   background-color: black;
   padding: 0 20%;
+}
+
+.wording {
+  margin-top: 100px;
+  margin-left: 95px;
+}
+
+.wording > h1 {
+  font-size: 400%;
+  max-width: 50px;
 }

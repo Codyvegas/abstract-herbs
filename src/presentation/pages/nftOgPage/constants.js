@@ -6,3 +6,7 @@ export const largeParagraph =
 
 export const note =
   "Note: Every Herb can claim its Abstract Version but just a single time, to collect an matching set.";
+
+export const onOgClick = () => {
+  window.open("https://opensea.io/collection/theherbs", "_blank");
+};

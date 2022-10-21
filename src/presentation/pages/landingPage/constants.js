@@ -6,5 +6,5 @@ export const infoText =
 export const enterBtnText = "ENTER";
 
 export const onEnterClick = () => {
-  window.open("/project");
+  window.open("/project", "_blank");
 };
