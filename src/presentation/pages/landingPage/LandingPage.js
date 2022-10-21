@@ -17,7 +17,7 @@ function LandingPage() {
         <div className="welcome-inner-container">
           <h1>{welcomeMessage}</h1>
           <button className="welcome-btn" onClick={onEnterClick.onEnterClick}>
-            {/* I dont know how to link this to the project page (<Link to="/project">Project</Link>) */}
+            {/*I dont know how to link this to the project page (<Link to="/project">Project</Link>) */}
             {enterBtnText}
           </button>
         </div>
@@ -31,4 +31,4 @@ function LandingPage() {
 }
 export default LandingPage;
 
-//enter button is not finished and needs routing help
+//!enter button is not finished and needs routing help

@@ -17,10 +17,10 @@ function ArtistPage() {
   return (
     <div className="artist-page">
       <div className="artist-img-container">
-        <h1>{david}</h1>
-        <p>{description}</p>
-      </div>
-      <div classname="david-img">
+        <div className="words">
+          <h1>{david}</h1>
+          <p>{description}</p>
+        </div>
         <img src={artistDavidImg} alt="" />
       </div>
       <hr />

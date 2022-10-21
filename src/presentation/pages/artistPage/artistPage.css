@@ -7,6 +7,20 @@ hr {
   z-index: 999;
 }
 
+.artist-img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+.words {
+  margin-top: 320px;
+}
+
+.artist-img-container > img {
+  transform: scale(0.98);
+  width: 70%;
+}
+
 .artist-page {
   background-color: black;
   padding: 0 20%;
