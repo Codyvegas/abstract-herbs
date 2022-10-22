@@ -1,12 +1,16 @@
+.bottom-section {
+  display: flex;
+  justify-content: start;
+}
+
 .buy-btn {
   background-color: white;
   border-radius: 4px;
-  font-size: 16;
-  width: 200px;
-  margin-top: 30px;
-  padding: 7px;
   font-weight: bold;
+  margin-top: 30px;
+  padding: 12px;
   transition: all 0.23s ease-in-out;
+  width: 200px;
 }
 
 .buy-btn:hover {
@@ -20,10 +24,10 @@
 }
 
 .first-section > img {
-  width: 70%;
   align-items: flex-start;
-  transform: scale(0.65);
   margin-left: -150px;
+  transform: scale(0.65);
+  width: 70%;
 }
 
 .og-page {
@@ -32,11 +36,39 @@
 }
 
 .wording {
-  margin-top: 100px;
+  flex-wrap: wrap;
+  margin-top: 250px;
   margin-left: 95px;
 }
 
 .wording > h1 {
-  font-size: 400%;
+  font-size: 500%;
   max-width: 50px;
+}
+
+.large-p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.note {
+  font-weight: 50;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 60%;
+}
+
+.large-p {
+  width: 1500px;
+}
+
+.p1 {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.p2 {
+  width: 60%;
 }

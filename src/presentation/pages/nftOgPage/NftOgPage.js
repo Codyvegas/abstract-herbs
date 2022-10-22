@@ -18,12 +18,15 @@ function OgHerbsPage() {
       </div>
       <hr />
       <div className="bottom-section">
-        <h1>HOW IT ALL STARTED</h1>
-        <p>{constants.largeParagraph}</p>
-        <p>{constants.note}</p>
-      </div>
-      <div className="500-herbs">
-        <img src={Grid_Herbs} alt="" />
+        <div className="large-p">
+          <h1>HOW IT ALL STARTED</h1>
+          <p className="p1">{constants.largeParagraph}</p>
+          <p className="p2">{constants.secondParagraph}</p>
+          <p className="note">
+            <em>{constants.note}</em>
+          </p>
+          <img src={Grid_Herbs} alt="" />
+        </div>
       </div>
     </div>
   );
