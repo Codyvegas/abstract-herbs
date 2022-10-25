@@ -1,6 +1,6 @@
 import "./ArtistPage.css";
 import artistDavidImg from "../../../assets/images/artist_david.jpg";
-import { david, description, endingParagraph } from "./constants";
+import { david, description, endingParagraph, secondp } from "./constants";
 import ImageGrid from "../../components/imageGrid/ImageGrid";
 import { gatherImagesFromFolder } from "../../../utils/utils";
 import HERB from "../../../assets/images/HERB.jpg";

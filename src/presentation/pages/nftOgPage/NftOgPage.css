@@ -8,6 +8,7 @@
   border-radius: 4px;
   font-weight: bold;
   margin-top: 30px;
+  margin-bottom: 50px;
   padding: 12px;
   transition: all 0.23s ease-in-out;
   width: 200px;
@@ -21,13 +22,14 @@
 .first-section {
   display: flex;
   justify-content: start;
+  margin-top: -70px;
 }
 
 .first-section > img {
   align-items: flex-start;
   margin-left: -150px;
-  transform: scale(0.65);
-  width: 70%;
+  transform: scale(0.75);
+  width: 80%;
 }
 
 .og-page {
@@ -37,7 +39,7 @@
 
 .wording {
   flex-wrap: wrap;
-  margin-top: 250px;
+  margin-top: 100px;
   margin-left: 95px;
 }
 

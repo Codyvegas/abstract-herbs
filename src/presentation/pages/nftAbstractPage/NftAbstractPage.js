@@ -1,11 +1,17 @@
 import "./NftAbstractPage.css";
 import {
   intro,
+  onAbstractClick,
   theBeginning,
   note,
-  above500,
+  note2,
+  note3,
+  above500p1,
   above500p2,
-  abstractSunday,
+  above500p3,
+  above500p4,
+  abstractSundayp1,
+  abstractSundayp2,
 } from "./constants";
 import devilKing from "../../../assets/images/devil_king.jpg";
 import LizardPoster from "../../../assets/images/lizard_poster.jpg";
@@ -32,33 +38,70 @@ function AbstractHerbsPage() {
   return (
     <div className="abstract-page">
       <div className="abstract-purchase-container">
-        <h1>Abstract Herbs</h1>
-        <p>{intro}</p>
-        <button className="abstract-purhcase-btn">BUY AN ABSTRACT HERB</button>
+        <div className="first-section-wording">
+          <h1>Abstract Herbs</h1>
+          <p>{intro}</p>
+          <button className="purchase-btn" onClick={onAbstractClick}>
+            BUY AN ABSTRACT HERB
+          </button>
+        </div>
         <img src={devilKing} alt="" />
       </div>
       <hr />
-      <div className="the beginning">
-        <h1>THE BEGINNING</h1>
-        <p>{theBeginning}</p>
-        <p>{note}</p>
-        <ImageGrid images={abstractPageNfts} gap={20} numColumns={1} />
+      <div className="the-beginning-container">
+        <div className="beginning-wording">
+          <h1>THE BEGINNING</h1>
+          <p>{theBeginning}</p>
+          <br />
+          <div className="italic-notes">
+            <p>
+              <em>{note}</em>
+            </p>
+            <br />
+            <p>
+              <em>{note2}</em>
+            </p>
+            <br />
+            <p>
+              <em>{note3}</em>
+            </p>
+          </div>
+        </div>
+        <div className="first-grid">
+          <ImageGrid images={abstractPageNfts} gap={50} numColumns={1} />
+        </div>
       </div>
       <hr />
-      <div className="above-500">
-        <h1>ABOVE THE #500</h1>
-        <p>{above500}</p>
-        <p>{above500p2}</p>
+      <div className="above-500-container">
+        <div className="above-fillers">
+          <h1>ABOVE THE #500</h1>
+          <p>{above500p1}</p>
+          <br />
+          <p>{above500p2}</p>
+        </div>
+        <div className="above-section2">
+          <p>{above500p3}</p>
+          <br />
+          <p>{above500p4}</p>
+        </div>
       </div>
       <hr />
       <div className="abstract-sunday">
-        <h1>ABSTRACT SUNDAY</h1>
-        <p>{abstractSunday}</p>
-        <img src={LizardPoster} alt="" />
+        <div className="sunday-words-container">
+          <h1>ABSTRACT SUNDAY</h1>
+          <p>{abstractSundayp1}</p>
+          <br />
+          <p>{abstractSundayp2}</p>
+        </div>
+        <div className="lizard-poster">
+          <img src={LizardPoster} alt="" />
+        </div>
       </div>
       <hr />
-
-      <ImageGrid images={abstractPageNfts2} gap={30} numColumns={3} />
+      <div className="gallery">
+        <h1>GALLERY</h1>
+        <ImageGrid images={abstractPageNfts2} gap={30} numColumns={3} />
+      </div>
     </div>
   );
 }

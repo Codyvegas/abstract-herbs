@@ -13,12 +13,19 @@ hr {
   margin-bottom: 65px;
 }
 .words {
-  margin-top: 320px;
+  font-size: x-large;
+  margin-top: 450px;
+  margin-bottom: 10px;
+}
+
+.words > p {
+  font-size: larger;
 }
 
 .artist-img-container > img {
-  transform: scale(0.98);
-  width: 70%;
+  transform: scale(0.95);
+  width: 75%;
+  margin-left: 50px;
 }
 
 .artist-page {
@@ -34,11 +41,14 @@ hr {
 }
 
 .btm-container > p {
-  flex: 1 0 40%;
+  flex: 1 0 35%;
+  font-size: x-large;
+  margin-top: 30px;
 }
 
 .btm-txt-logo {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin: 150px 0;
+  transform: scale(1.5);
 }
