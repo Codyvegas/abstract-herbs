@@ -5,7 +5,6 @@
 
 .purchase-btn {
   transition: all 0.23s ease-in-out;
-  margin-top: 5px;
 }
 
 .purchase-container {
@@ -15,16 +14,13 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  min-height: 150px;
-  width: 100%;
-  padding: 50px;
+  padding: 30px;
   margin: 100px 0;
 }
 
 .purchase-button-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .purchase-button-container > button {
@@ -32,8 +28,8 @@
   color: white;
   font-size: 22px;
   width: 300px;
-  height: 30px;
-  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .purchase-container > h2 {

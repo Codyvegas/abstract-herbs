@@ -6,12 +6,16 @@ import { Link, Outlet } from "react-router-dom";
 function TheHerbPage() {
   return (
     <div className="herb-container">
-      <Link to="/og-herbs">
-        <img src={OgKing} alt="" />
-      </Link>
-      <Link to="/abstract-herbs">
-        <img src={DevilKing} alt="" />
-      </Link>
+      <div className="img-container-1">
+        <Link to="/og-herbs">
+          <img src={OgKing} alt="" />
+        </Link>
+      </div>
+      <div className="img-container-2">
+        <Link to="/abstract-herbs">
+          <img src={DevilKing} alt="" />
+        </Link>
+      </div>
       <Outlet />
     </div>
   );
