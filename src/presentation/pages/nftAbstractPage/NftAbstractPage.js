@@ -17,6 +17,8 @@ import devilKing from "../../../assets/images/devil_king.jpg";
 import LizardPoster from "../../../assets/images/lizard_poster.jpg";
 import ImageGrid from "../../components/imageGrid/ImageGrid";
 import { gatherImagesFromFolder } from "../../../utils/utils";
+import Slider from "../../components/posterSlider/Slider";
+// import { SliderData } from "../presentation/components/posterSlider/SliderData";
 
 function AbstractHerbsPage() {
   const abstractPageNfts = gatherImagesFromFolder(
@@ -94,6 +96,7 @@ function AbstractHerbsPage() {
           <p>{abstractSundayp2}</p>
         </div>
         <div className="lizard-poster">
+          <Slider />
           <img src={LizardPoster} alt="" />
         </div>
       </div>
