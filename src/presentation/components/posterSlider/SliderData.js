@@ -1,5 +1,5 @@
 import lizard from "../../../assets/sliderimgs/lizard_poster.jpg";
-// import Banner_1 from "../../../assets/sliderimgs/Banner_1.jpg";
+import Banner_1 from "../../../assets/sliderimgs/Banner_1.jpg";
 import Banner_2 from "../../../assets/sliderimgs/Banner_2.jpg";
 import Banner_3 from "../../../assets/sliderimgs/Banner_3.jpg";
 import Banner_4 from "../../../assets/sliderimgs/Banner_4.jpg";
@@ -14,9 +14,9 @@ export const SliderData = [
   {
     image: <img src={lizard} alt=""></img>,
   },
-  //   {
-  //     image: <img src={Banner_1} alt=""></img>,
-  //   },
+  {
+    image: <img src={Banner_1} alt=""></img>,
+  },
   {
     image: <img src={Banner_2} alt=""></img>,
   },

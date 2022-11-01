@@ -96,7 +96,7 @@ function AbstractHerbsPage() {
           <p>{abstractSundayp2}</p>
         </div>
         <div className="lizard-poster">
-          <Slider />
+          {/* <Slider /> */}
           <img src={LizardPoster} alt="" />
         </div>
       </div>
