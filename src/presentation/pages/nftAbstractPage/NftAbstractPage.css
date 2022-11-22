@@ -20,14 +20,6 @@
   margin: 100px 0px;
 }
 
-.sunday-words-container {
-  margin: 250px 50px;
-}
-
-.lizard-poster {
-  margin-right: -100px;
-}
-
 .abstract-page {
   background-color: black;
   padding: 0 20%;
@@ -55,11 +47,19 @@
 }
 
 .beginning-wording {
-  margin: 250px 300px 100px -100px;
+}
+
+.first-grid {
+  transform: scale(0.7);
 }
 
 .first-section-wording > h1 {
   font-size: 500%;
+}
+
+.first-section-wording {
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .gallery {
@@ -69,10 +69,12 @@
 .gallery > h1 {
   margin-bottom: 100px;
 }
+.italic-notes {
+  font-weight: 300;
+}
 
-.first-section-wording {
-  flex-wrap: wrap;
-  margin-top: 50px;
+.lizard-poster {
+  margin-right: -100px;
 }
 
 .purchase-btn {
@@ -90,22 +92,14 @@
   color: white;
 }
 
+.sunday-words-container {
+  margin: 250px 50px;
+}
+
 .the-beginning-container {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 50px 0;
-  align-items: stretch;
 }
 
 .the-beginning-container > * {
   flex: 1 0 50%;
-}
-
-.first-grid {
-  transform: scale(0.7);
-}
-
-.italic-notes {
-  font-weight: 300;
 }

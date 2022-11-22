@@ -9,7 +9,7 @@ hr {
 
 .artist-img-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 65px;
 }
 .words {
@@ -23,9 +23,9 @@ hr {
 }
 
 .artist-img-container > img {
-  transform: scale(0.95);
-  width: 75%;
-  margin-left: 50px;
+  transform: scale(0.85);
+  min-width: 90%;
+  flex-wrap: wrap;
 }
 
 .artist-page {
@@ -41,7 +41,7 @@ hr {
 }
 
 .btm-container > p {
-  flex: 1 0 35%;
+  flex: 1 0 40%;
   font-size: x-large;
   margin-top: 30px;
 }

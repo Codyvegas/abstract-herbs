@@ -2,7 +2,6 @@
   background-color: black;
   display: flex;
   justify-content: center;
-
   margin-bottom: 100px;
 }
 
@@ -10,6 +9,18 @@
   margin-top: -100px;
 }
 
+.img-container-1 > img {
+  background-size: cover;
+  width: 50%;
+  height: auto;
+}
+
 .img-container-2 {
   margin-top: -100px;
+}
+
+.img-container-2 > img {
+  background-size: cover;
+  width: 50%;
+  height: auto;
 }
