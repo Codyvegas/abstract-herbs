@@ -1,5 +1,4 @@
 import "./LandingPage.css";
-// import { Link, Outlet } from "react-router-dom"; do i need this?
 import {
   onEnterClick,
   enterBtnText,
@@ -32,5 +31,3 @@ function LandingPage() {
   );
 }
 export default LandingPage;
-
-//!enter button is not finished and needs routing help
